@@ -1,0 +1,22 @@
+# Custom Dictionary Words
+adipisicing
+amet
+Ayebakuro
+Burkina
+Cabo
+consectetur
+Cpath
+Csvg
+elit
+Eswatini
+Faso
+fetchPriority
+Iseghohimen
+Mollitia
+noModule
+Obande
+Olije
+Oruwori
+recusandae
+tada
+tailwindcss

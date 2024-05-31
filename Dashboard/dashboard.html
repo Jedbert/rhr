@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets\images\favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo" title="RHR-Academy">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="navbar">
+            <a href="dashboard.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="./Employability/employ.html" onclick="Employability()">
+                <span class="material-icons-sharp">approval</span>
+                <h3>Employability</h3>
+            </a>
+            <a href="./Certification/certification.html">
+                <span class="material-icons-sharp">workspace_premium</span>
+                <h3>Certifications</h3>
+            </a>
+            <a href="./Password/password.html">
+                <span class="material-icons-sharp">password</span>
+                <h3>Change Password</h3>
+            </a>
+            <a href="../index.html">
+                <span class="material-icons-sharp" onclick="">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="./assets/images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Hey, <b>Sylvia</b> </p>
+                        <small class="text-muted">12102030</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>Software Programming</p>
+                    <h5>DOB</h5>
+                    <p>29-Dec-1992</p>
+                    <h5>Contact</h5>
+                    <p>1234567890</p>
+                    <h5>Email</h5>
+                    <p>unknown@gmail.com</p>
+                    <h5>Address</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia recusandae</p>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Modules</h1>
+            <div class="subjects">
+                <div class="eg">
+                    <span class="material-icons-sharp">architecture</span>
+                    <h3>Responsive Web Design</h3>
+                    <h2>12/14</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>86%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="mth">
+                    <span class="material-icons-sharp">functions</span>
+                    <h3>JavaScript</h3>
+                    <h2>27/29</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>93%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="cs">
+                    <span class="material-icons-sharp">computer</span>
+                    <h3>Data Visualization</h3>
+                    <h2>0/30</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36" opacity="0"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>0%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="cg">
+                    <span class="material-icons-sharp">dns</span>
+                    <h3>Back End Development &amp; APIs</h3>
+                    <h2>24/25</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>96%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="net">
+                    <span class="material-icons-sharp">router</span>
+                    <h3>Quality Assurance</h3>
+                    <h2>15/27</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>92%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+            </div>
+
+            <div class="timetable" id="timetable">
+                <div>
+                    <span id="prevDay">&lt;</span>
+                    <h2>Today's Schedule</h2>
+                    <span id="nextDay">&gt;</span>
+                </div>
+                <span class="closeBtn" onclick="timeTableAll()">X</span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Module</th>
+                            <th>Mode</th>
+                            <!-- <th></th> -->
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="updates">
+                    <div class="message">
+                        <p> <b>Certifications</b>
+                            Track completed courses and earned certificates</p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Co-curricular</b> Global internship &amp; Jop opportunities by Our Partners.</p>
+                        <small class="text-muted">10 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Employability</b> Tips, templates, and guides for crafting effective CVs and LinkedIn
+                            profiles</p>
+                        <small class="text-muted">Yesterday</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leaves">
+                <h2>Course Facilitator</h2>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="./assets/images/facilitator.jpeg" alt=""></div>
+                    <div class="info">
+                        <h3>Ayebakuro A. Oruwori</h3>
+                        <small class="text-muted">Software Engineer
+                            <!-- | DevOps Engineer Project Manager | Writer --></small>
+                    </div>
+                </div>
+                <!-- <div class="teacher">
+                    <div class="profile-photo"><img src="./assets/images/profile-2.jpg" alt=""></div>
+                    <div class="info">
+                        <h3>Miracle Iseghohimen</h3>
+                        <small class="text-muted">Half Day</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="./assets/images/profile-4.jpg" alt=""></div>
+                    <div class="info">
+                        <h3>Olije M. Obande</h3>
+                        <small class="text-muted">Full Day</small>
+                    </div> 
+                </div>-->
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./assets/JS/timeTable.js"></script>
+    <script src="./assets/JS/app.js"></script>
+</body>
+
+</html>
